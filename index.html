@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Редактор маршрута</title>
+</head>
+
+<body>
+  <main>
+    <h1 class="visually-hidden">Построение маршрута</h1>
+
+    <!-- Построение маршрута -->
+    <section class="route  container">
+
+      <!-- Контейнер для списка точек маршрута -->
+      <div class="route__wrapper route__wrapper--text">
+        <input type="text" class="route__point" placeholder="Новая точка маршрута">
+
+        <!-- Список точек маршрута -->
+        <ul class="route__list">
+          <li class="route__item">
+            <p class="route__text">Точка маршрута 1</p>
+            <button type="reset" class="route__cancel-point">х</button>
+          </li>
+          <li class="route__item">
+             <p class="route__text">Точка маршрута 2</p>
+             <button type="reset" class="route__cancel-point">х</button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Контейнер для карты -->
+      <div class="route__wrapper route__wrapper--map">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBF5nQSFWD" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
